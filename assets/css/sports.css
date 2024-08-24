@@ -1,0 +1,29 @@
+section#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section#image-container div img.portrait {
+    object-fit: none;
+    width: calc(50vw - 30px);
+    height: auto;
+    object-fit: contain;
+}
+
+section#image-container div img.landscape {
+    object-fit: none;
+    width: calc(100vw - 30px);
+    height: auto;
+    object-fit: contain;
+}
