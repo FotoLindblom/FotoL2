@@ -28,14 +28,16 @@ section#image-container div img.landscape {
     object-fit: contain;
 }
 
-.modal {
+
+
+section.modal {
     display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: auto;
     background-color: rgba(0,0,0,0.8);
 }
@@ -48,48 +50,51 @@ div.carousel {
     width: 100vw;
 }
 
-#carouselImage {
+img#carouselImage {
     max-width: 80vw;
     max-height: 80vh;
     object-fit: contain;
 }
 
-.close {
+span.close {
     position: absolute;
     top: 10px;
     right: 25px;
-    color: #aaa;
+    color: rgb(255, 255, 255);
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
+a.download {
+    position: absolute;
+    top: 14px;
+    left: 25px;
+}
+
+a.download img {
+    width: 20px;
+}
+
+span.close:hover {
     cursor: pointer;
 }
 
-/* Carousel controls */
-.prev, .next {
+a.prev, a.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
 }
 
-.next {
+a.next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+a.prev:hover, a.next:hover {
     background-color: rgba(0,0,0,0.8);
+    transition: 0.3s;
 }
