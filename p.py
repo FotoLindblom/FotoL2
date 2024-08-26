@@ -1,6 +1,6 @@
 import os
 
-directory = 'media/sports'
+directory = "media/sports"
 
 files = os.listdir(directory)
 

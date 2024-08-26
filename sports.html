@@ -6,15 +6,27 @@
     <title>Foto Lindblom</title>
     <script src="assets/js/headerFooter.js" defer></script>
     <script src="assets/js/sports.js" defer></script>
+    <script src="assets/js/imageCarousel.js" defer></script>
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/sports.css">
-
 </head>
 
 
 
 <body>
     <header id="header"></header>
+
+    <!-- <button id="openModal">Open Image Gallery</button> -->
+    <section id="imageModal" class="modal">
+        <span class="close">&times;</span>
+
+        <div class="carousel">
+            <img id="carouselImage" src="" alt="Carousel Image">
+        </div>
+        
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </section>
 
     <main>
         <section id="image-container">
