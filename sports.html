@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foto Lindblom</title>
     <script src="assets/js/headerFooter.js" defer></script>
-    <script src="assets/js/sports.js" defer></script>
+    <script src="assets/js/sport.js" type="module"></script>
     <script src="assets/js/imageCarousel.js" defer></script>
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/sports.css">
@@ -16,23 +16,20 @@
 <body>
     <header id="header"></header>
 
-    <!-- <button id="openModal">Open Image Gallery</button> -->
     <section id="imageModal" class="modal">
         <span class="close">&times;</span>
         <a class="download" href="" download><img src="assets/images/download.png" alt="download"></a>
-
-        <div class="carousel">
-            <img id="carouselImage" src="" alt="Carousel Image">
-        </div>
+        
+        <div class="carousel"><img id="carouselImage" src="" alt="Carousel Image"></div>
         
         <a class="prev">&#10094;</a>
         <a class="next">&#10095;</a>
     </section>
 
-    <main>
-        <section id="image-container">
+    <div id="filter-container"></div>
 
-        </section>
+    <main>
+        <section id="image-container"></section>
     </main>
 
     <footer id="footer"></footer>

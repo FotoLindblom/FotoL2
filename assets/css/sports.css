@@ -28,6 +28,19 @@ section#image-container div img.landscape {
     object-fit: contain;
 }
 
+div#filter-container {
+    display: flex;
+}
+
+span.filter {
+    margin: 10px 0 0 10px;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: "Arial Narrow";
+    color: rgb(255, 255, 255);
+}
 
 
 section.modal {

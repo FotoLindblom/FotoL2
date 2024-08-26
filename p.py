@@ -4,16 +4,16 @@ directory = "media/sports/mid-res"
 
 files = os.listdir(directory)
 
-all_files = []
+all_files_list = []
 for file in files:
-    all_files.append(file)
-all_files.reverse()
+    all_files_list.append(file)
+all_files_list.reverse()
 
-string=''
-for i,file in enumerate(all_files):
-    if i//5 - i/5 == 0:
-        string+='\n'
+all_files_dict = {}
+for file in all_files_list:
+    if file.split('-')[0] in all_files_dict:
+        all_files_dict[file.split('-')[0]].append(file)
+    else:
+        all_files_dict[file.split('-')[0]] = [file]
 
-    string+=f"'{file}',"
-
-print(string)
+print(all_files_dict)
