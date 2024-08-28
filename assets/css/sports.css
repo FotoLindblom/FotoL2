@@ -28,8 +28,19 @@ section#image-container div img.landscape {
     object-fit: contain;
 }
 
+@media (min-aspect-ratio: 1/1) {
+    section#image-container div img.landscape {
+        width: calc(50vw - 30px);
+    }
+  
+    section#image-container div img.portrait {
+        width: calc(25vw - 30px);
+    }
+}
+
 div#filter-container {
     display: flex;
+    flex-wrap: wrap
 }
 
 span.filter {
@@ -37,9 +48,16 @@ span.filter {
     font-size: 14px;
     padding: 8px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0);
     font-family: "Arial Narrow";
     color: rgb(255, 255, 255);
+    white-space: nowrap;
+}
+
+span#active {
+    background-color: rgba(255, 255, 255);
+    color: rgb(0, 0, 0);
+    order: -1;
 }
 
 

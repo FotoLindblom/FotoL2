@@ -1,11 +1,17 @@
 section.hero {
     height: calc(100vh - 40px);
-    background-image: url("../images/PlaceholderPortrait.jpg");
+    background-image: url("../images/PlaceholderPortraitVertical.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
     overflow: hidden;
+}
+
+@media (min-aspect-ratio: 1/1) {
+    section.hero {
+        background-image: url("../images/PlaceholderPortraitHorizontal.jpg");
+    }
 }
 
 section.hero a {
@@ -25,13 +31,22 @@ section.hero a h1 {
 
 section.contact {
     height: 50vh;
-    background-image: url("../images/PlaceholderLandscape.jpg");
+    background-image: url("../images/PlaceholderLandscapeVertical.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
     overflow: hidden;
 }
+
+@media (min-aspect-ratio: 1/1) {
+    section.contact {
+        background-image: url("../images/PlaceholderLandscapeHorizontal.jpg");
+        object-fit: scale-down;
+
+    }
+}
+
 
 section.contact a {
     text-decoration: none;

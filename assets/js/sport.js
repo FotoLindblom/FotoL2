@@ -23,16 +23,29 @@ const images = {
 const filterBtnContainer = document.getElementById("filter-container");
 const imageContainer = document.getElementById('image-container')
 
+const filterBtnFunction = (span, event) => {
+    let activeFilter = document.getElementById('active');
+    activeFilter.removeAttribute('id');
+    span.setAttribute('id', 'active')
+    imageContainer.innerHTML = '';
+    initializeGallery(images[event], 'media/sports'); 
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     initializeGallery(images[Object.keys(images)[0]], 'media/sports')
 
+    let flag = 0
     Object.keys(images).forEach(event => {
         const span = document.createElement("span");
         span.textContent = event;
         span.classList.add('filter')
+        if (flag == 0 ) {
+            span.setAttribute('id', 'active')
+            flag = 1
+        }
+
         span.addEventListener("click", () => {
-            imageContainer.innerHTML = '';
-            initializeGallery(images[event], 'media/sports'); // Use the variable event here
+            filterBtnFunction(span, event)
         });
         
         filterBtnContainer.appendChild(span);

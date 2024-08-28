@@ -84,3 +84,11 @@ footer a {
     color: rgb(200, 200, 200);
 
 }
+
+footer ul.socials {
+    align-self: center;
+}
+
+footer img {
+    width: 14px;
+}
