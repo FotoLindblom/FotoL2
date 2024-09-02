@@ -78,6 +78,7 @@ footer {
 footer div {
     display: flex;
     padding: 20px;
+    justify-content: space-between;
 }
 
 footer a {
@@ -85,10 +86,14 @@ footer a {
 
 }
 
+footer ul {
+    list-style-type: none;
+}
+
 footer ul.socials {
     align-self: center;
 }
 
 footer img {
-    width: 14px;
+    width: 25px;
 }
