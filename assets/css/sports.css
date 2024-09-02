@@ -92,23 +92,37 @@ span.close {
     top: 10px;
     right: 25px;
     color: rgb(255, 255, 255);
-    font-size: 28px;
+    font-size: 50px;
     font-weight: bold;
-}
-
-a.download {
-    position: absolute;
-    top: 14px;
-    left: 25px;
-}
-
-a.download img {
-    width: 20px;
 }
 
 span.close:hover {
     cursor: pointer;
 }
+
+a.download {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+a.download img {
+    width: 30px;
+}
+
+
+
+@media (min-aspect-ratio: 1/1) {
+    span.close {
+        top: 10px;
+        right: 45px;
+    }
+    a.download {
+        top: 20px;
+        left: 45px;
+    }
+}
+
 
 a.prev, a.next {
     cursor: pointer;

@@ -1,24 +1,7 @@
 import { initializeGallery } from '/assets/js/loadImages.js';
 
-const images = {
-    'DM Lång': [
-        '20240825-IMG_6928.jpg', 
-        '20240825-IMG_6933.jpg', 
-        '20240825-IMG_6945.jpg', 
-        '20240825-IMG_6996.jpg', 
-        '20240825-IMG_7001.jpg', 
-        '20240825-IMG_7010.jpg', 
-        '20240825-IMG_7049.jpg'
-    ],
-    'Mälerhöjden Medel': [
-        '20240818-IMG_6816.jpg', 
-        '20240818-IMG_6819.jpg', 
-        '20240818-IMG_6831.jpg', 
-        '20240818-IMG_6837.jpg', 
-        '20240818-IMG_6859.jpg', 
-        '20240818-IMG_6865.jpg'
-    ], 
-};
+const images = {'SM Lång final': ['240901-Lång_SM_final-7.jpg', '240901-Lång_SM_final-6.jpg', '240901-Lång_SM_final-5.jpg', 
+    '240901-Lång_SM_final-4.jpg', '240901-Lång_SM_final-3.jpg', '240901-Lång_SM_final-2.jpg', '240901-Lång_SM_final-1.jpg']};
 
 const filterBtnContainer = document.getElementById("filter-container");
 const imageContainer = document.getElementById('image-container')
