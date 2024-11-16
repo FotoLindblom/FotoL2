@@ -1,6 +1,6 @@
 section.hero {
     height: calc(100vh - 40px);
-    background-image: url("../images/PlaceholderPortraitVertical.jpg");
+    background-image: url("../images/SelfPortraitVertical.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -10,7 +10,7 @@ section.hero {
 
 @media (min-aspect-ratio: 1/1) {
     section.hero {
-        background-image: url("../images/PlaceholderPortraitHorizontal.jpg");
+        background-image: url("../images/SelfPortraitHorizontal.jpg");
     }
 }
 
