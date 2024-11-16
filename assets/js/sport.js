@@ -1,7 +1,7 @@
 import { initializeGallery } from '/assets/js/loadImages.js';
 
-const images = {'SM Lång final': ['240901-Lång_SM_final-7.jpg', '240901-Lång_SM_final-6.jpg', '240901-Lång_SM_final-5.jpg', 
-    '240901-Lång_SM_final-4.jpg', '240901-Lång_SM_final-3.jpg', '240901-Lång_SM_final-2.jpg', '240901-Lång_SM_final-1.jpg']};
+const images = {'SM Lång final': ['240901-Lang_SM_final-7.jpg', '240901-Lang_SM_final-6.jpg', '240901-Lang_SM_final-5.jpg', 
+    '240901-Lang_SM_final-4.jpg', '240901-Lang_SM_final-3.jpg', '240901-Lang_SM_final-2.jpg', '240901-Lang_SM_final-1.jpg']};
 
 const filterBtnContainer = document.getElementById("filter-container");
 const imageContainer = document.getElementById('image-container')
