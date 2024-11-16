@@ -1,4 +1,4 @@
-import { initializeGallery } from 'assets/js/loadImages.js';
+import { initializeGallery } from './assets/js/loadImages.js';
 
 const images = {'SM Lång final': ['240901-Lang_SM_final-7.jpg', '240901-Lang_SM_final-6.jpg', '240901-Lang_SM_final-5.jpg', 
     '240901-Lang_SM_final-4.jpg', '240901-Lang_SM_final-3.jpg', '240901-Lang_SM_final-2.jpg', '240901-Lang_SM_final-1.jpg']};
