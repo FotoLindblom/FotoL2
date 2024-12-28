@@ -28,12 +28,16 @@ export const initializeGallery = (images, path) => {
         img.alt = "sports image";
         img.classList.add("placeholder");
 
-        const aspectRatio = img.naturalWidth / img.naturalHeight;
-        if (aspectRatio > 1) {
-            img.classList.add("landscape");
-        } else {
-            img.classList.add("portrait");
-        }
+        console.log(img.naturalWidth)
+
+        img.addEventListener("load", () => {
+            const aspectRatio = img.naturalWidth / img.naturalHeight;
+            if (aspectRatio > 1) {
+                img.classList.add("landscape");
+            } else {
+                img.classList.add("portrait");
+            }
+        });
 
         return img;
     };
