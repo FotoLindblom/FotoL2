@@ -19,12 +19,13 @@ section.hero a {
 }
 
 section.hero a h1 {
+    font-size: 1.8em;
     display: inline;
     position: relative;
     top : 75vh;
     padding: 10px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     color: rgb(0, 0, 0);
     backdrop-filter: blur(3px);
 }
@@ -53,11 +54,13 @@ section.contact a {
 }
 
 section.contact a h1 {
+    font-size: 1.8em;
     display: inline;
     position: relative;
     top : 37.5vh;
     padding: 10px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     color: rgb(0, 0, 0);
+    backdrop-filter: blur(3px);
 }
