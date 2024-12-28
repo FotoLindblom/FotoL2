@@ -24,7 +24,6 @@ section a {
     padding: 10px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.6);
-    font-family: "Arial Narrow";
     color: rgb(255, 255, 255);
     backdrop-filter: blur(3px);
 }

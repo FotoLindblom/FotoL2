@@ -49,7 +49,6 @@ span.filter {
     padding: 8px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0);
-    font-family: "Arial Narrow";
     color: rgb(255, 255, 255);
     white-space: nowrap;
     cursor: pointer;
