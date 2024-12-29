@@ -85,6 +85,14 @@ footer a {
 
 }
 
+footer ul.nav li {
+    padding-top: 5px;
+}
+
+footer ul.nav li:first-child {
+    padding-top: 0px;
+}
+
 footer ul {
     list-style-type: none;
 }
