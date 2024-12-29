@@ -43,8 +43,9 @@ export const initializeGallery = (images, path) => {
     const setupImageObserver = (observer, images) => {
         images.forEach(image => {
             const imgElement = createLowResImage(image);
+            const wrapper = createImageWrapper(imgElement);
 
-            container.appendChild(imgElement);
+            container.appendChild(wrapper);
             observer.observe(imgElement);
         });
     };
