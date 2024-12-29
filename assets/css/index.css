@@ -14,25 +14,34 @@ section.hero {
     }
 }
 
-section.hero a {
+section a {
     text-decoration: none;
 }
 
-section.hero a h1 {
-    font-size: 1.8em;
+section a h1 {
+    font-size: 1.5em;
     display: inline;
     position: relative;
-    top : 75vh;
+    top : 75%;
     padding: 10px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(0, 0, 0);
-    backdrop-filter: blur(3px);
+}
+
+@media (min-aspect-ratio: 1/1) {
+    section a h1 {
+        font-size: 1.8em;
+        top : 80%;
+        padding: 10px;
+        border-radius: 20px;
+    }
 }
 
 section.contact {
-    height: 50vh;
-    background-image: url("../images/PlaceholderLandscapeVertical.jpg");
+    width: 100vw;
+    aspect-ratio: 16 / 9;
+    background-image: url("../images/LandscapeVertical.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -42,25 +51,9 @@ section.contact {
 
 @media (min-aspect-ratio: 1/1) {
     section.contact {
-        background-image: url("../images/PlaceholderLandscapeHorizontal.jpg");
-        object-fit: scale-down;
+        width: 100vw;
+        aspect-ratio: 24 / 9;
+        background-image: url("../images/LandscapeHorizontal.jpg");
 
     }
-}
-
-
-section.contact a {
-    text-decoration: none;
-}
-
-section.contact a h1 {
-    font-size: 1.8em;
-    display: inline;
-    position: relative;
-    top : 37.5vh;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: rgb(0, 0, 0);
-    backdrop-filter: blur(3px);
 }
