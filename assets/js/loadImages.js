@@ -5,7 +5,7 @@ export const initializeGallery = (images, path) => {
         const img = document.createElement("img");
         img.src = `${path}/low-res/${image}.avif`;
         img.dataset.src = `${path}/mid-res/${image}.avif`;
-        img.alt = image;
+        img.alt = `${image}.avif`;
         img.classList.add("placeholder");
 
         img.addEventListener("load", () => {
@@ -102,12 +102,6 @@ export const initializeGallery = (images, path) => {
         const loadImage = (index) => {
             modalImg.src = images[index].src;
             downloadBtn.href = images[index].src.replace('mid-res', 'high-res').replace('.avif', '.jpg');
-
-            const nextIndex = (index + 1) % images.length;
-            const prevIndex = (index - 1 + images.length) % images.length;
-
-            loadHighResImage(images[nextIndex]);
-            loadHighResImage(images[prevIndex]);
         };
 
         images.forEach((img, index) => {
@@ -126,12 +120,12 @@ export const initializeGallery = (images, path) => {
 
         prevBtn.addEventListener("click", () => {
             currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-            loadImage(currentIndex);
+            modalImg.src = images[currentIndex].src;
         });
 
         nextBtn.addEventListener("click", () => {
             currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-            loadImage(currentIndex);
+            modalImg.src = images[currentIndex].src;
         });
     };
 
