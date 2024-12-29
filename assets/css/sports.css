@@ -7,6 +7,13 @@ section#image-container {
     margin: 10px;
 }
 
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 section#image-container img.portrait {
     object-fit: none;
     width: calc(50vw - 30px);
