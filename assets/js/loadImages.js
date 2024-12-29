@@ -1,6 +1,25 @@
 export const initializeGallery = (images, path) => {
     const container = document.getElementById("image-container");
 
+    const createLowResImage = (image) => {
+        const img = document.createElement("img");
+        img.src = `${path}/low-res/${image}`;
+        img.dataset.src = `${path}/mid-res/${image}`;
+        img.alt = image;
+        img.classList.add("placeholder");
+
+        img.addEventListener("load", () => {
+            const aspectRatio = img.naturalWidth / img.naturalHeight;
+            if (aspectRatio >= 1) {
+                img.classList.add("landscape");
+            } else {
+                img.classList.add("portrait");
+            }
+        });
+
+        return img;
+    };
+
     const loadHighResImage = (img) => {
         return new Promise((resolve, reject) => {
             const highResImg = new Image();
@@ -21,40 +40,11 @@ export const initializeGallery = (images, path) => {
         });
     };
 
-    const createImageElement = (image) => {
-        const img = document.createElement("img");
-        img.src = `${path}/low-res/${image}`;
-        img.dataset.src = `${path}/mid-res/${image}`;
-        img.alt = "sports image";
-        img.classList.add("placeholder");
-
-        console.log(img.naturalWidth)
-
-        img.addEventListener("load", () => {
-            const aspectRatio = img.naturalWidth / img.naturalHeight;
-            if (aspectRatio > 1) {
-                img.classList.add("landscape");
-            } else {
-                img.classList.add("portrait");
-            }
-        });
-
-        return img;
-    };
-
-    const createImageWrapper = (img) => {
-        const wrapper = document.createElement("div");
-        wrapper.classList.add("image-wrapper");
-        wrapper.appendChild(img);
-        return wrapper;
-    };
-
     const setupImageObserver = (observer, images) => {
         images.forEach(image => {
-            const imgElement = createImageElement(image);
-            const wrapper = createImageWrapper(imgElement);
+            const imgElement = createLowResImage(image);
 
-            container.appendChild(wrapper);
+            container.appendChild(imgElement);
             observer.observe(imgElement);
         });
     };

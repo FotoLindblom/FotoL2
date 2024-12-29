@@ -7,30 +7,23 @@ section#image-container {
     margin: 10px;
 }
 
-.image-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-section#image-container div img.portrait {
+section#image-container img.portrait {
     object-fit: none;
     width: calc(50vw - 30px);
     height: auto;
     object-fit: contain;
 }
 
-section#image-container div img.landscape {
+section#image-container img.landscape {
     object-fit: none;
-    width: calc(100vw - 20px);
+    width: calc(100vw - 50px);
     height: auto;
     object-fit: contain;
 }
 
 @media (min-aspect-ratio: 1/1) {
     section#image-container div img.landscape {
-        width: calc(50vw - 30px);
+        width: calc(50vw - 50px);
     }
   
     section#image-container div img.portrait {
