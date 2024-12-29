@@ -40,7 +40,7 @@ section a h1 {
 
 section.contact {
     width: 100vw;
-    aspect-ratio: 16 / 9;
+    height: 56.25vw;
     background-image: url("../images/LandscapeVertical.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@ section.contact {
 @media (min-aspect-ratio: 1/1) {
     section.contact {
         width: 100vw;
-        aspect-ratio: 24 / 9;
+        height: 37.5vw;
         background-image: url("../images/LandscapeHorizontal.jpg");
 
     }
