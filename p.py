@@ -6,8 +6,9 @@ files = os.listdir(directory)
 
 all_files_list = []
 for file in files:
-    all_files_list.append(file)
-all_files_list.reverse()
+    all_files_list.append(file.split('.')[0])
+    
+all_files_list = sorted(all_files_list, key=lambda x: int(x.rsplit('-', 1)[-1]))
 
 all_files_dict = {}
 for file in all_files_list:

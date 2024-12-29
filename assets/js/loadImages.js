@@ -3,8 +3,8 @@ export const initializeGallery = (images, path) => {
 
     const createLowResImage = (image) => {
         const img = document.createElement("img");
-        img.src = `${path}/low-res/${image}`;
-        img.dataset.src = `${path}/mid-res/${image}`;
+        img.src = `${path}/low-res/${image}.avif`;
+        img.dataset.src = `${path}/mid-res/${image}.avif`;
         img.alt = image;
         img.classList.add("placeholder");
 

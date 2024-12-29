@@ -1,10 +1,10 @@
 import { initializeGallery } from '../../assets/js/loadImages.js';
 
 const images = {
-    '25 manna': ['241012-25_manna-1.jpg', '241012-25_manna-3.jpg', '241012-25_manna-9.jpg', '241012-25_manna-8.jpg', '241012-25_manna-7.jpg', '241012-25_manna-6.jpg', '241012-25_manna-5.jpg', '241012-25_manna-4.jpg', '241012-25_manna-3.jpg', '241012-25_manna-2.jpg', '241012-25_manna-11.jpg', '241012-25_manna-10.jpg'],
-    'Helg utan älg': ['241019-Helg_utan_alg-8.jpg', '241019-Helg_utan_alg-7.jpg', '241019-Helg_utan_alg-6.jpg', '241019-Helg_utan_alg-5.jpg', '241019-Helg_utan_alg-4.jpg', '241019-Helg_utan_alg-3.jpg', '241019-Helg_utan_alg-2.jpg', '241019-Helg_utan_alg-1.jpg'], 
-    '25 Manna medeln': ['241013-25_Manna_medeln-8.jpg', '241013-25_Manna_medeln-7.jpg','241013-25_Manna_medeln-6.jpg', '241013-25_Manna_medeln-5.jpg', '241013-25_Manna_medeln-4.jpg', '241013-25_Manna_medeln-3.jpg', '241013-25_Manna_medeln-2.jpg', '241013-25_Manna_medeln-1.jpg'], 
-};
+    '25 Manna': ['241012-25M-1', '241012-25M-2', '241012-25M-3', '241012-25M-4', '241012-25M-5', '241012-25M-6', '241012-25M-7', '241012-25M-8', '241012-25M-9', '241012-25M-10', '241012-25M-11'], 
+    '25 Manna Medeln': ['241013_25MM-1', '241013_25MM-2', '241013_25MM-3', '241013_25MM-4', '241013_25MM-5', '241013_25MM-6', '241013_25MM-7', '241013_25MM-8', '241013_25MM-9', '241013_25MM-10', '241013_25MM-11', '241013_25MM-12'], 
+    'Hälg Utan Älg': ['241019-HUA-1', '241019-HUA-2', '241019-HUA-3', '241019-HUA-4', '241019-HUA-5', '241019-HUA-6', '241019-HUA-7']
+    };
 
 const filterBtnContainer = document.getElementById("filter-container");
 const imageContainer = document.getElementById('image-container')
