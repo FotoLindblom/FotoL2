@@ -22,11 +22,11 @@ section#image-container img.landscape {
 }
 
 @media (min-aspect-ratio: 1/1) {
-    section#image-container div img.landscape {
+    section#image-container img.landscape {
         width: calc(50vw - 50px);
     }
   
-    section#image-container div img.portrait {
+    section#image-container img.portrait {
         width: calc(25vw - 30px);
     }
 }

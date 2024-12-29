@@ -93,7 +93,7 @@ export const initializeGallery = (images, path) => {
 
         const loadImage = (index) => {
             modalImg.src = images[index].src;
-            downloadBtn.href = images[index].src.replace('mid-res', 'high-res');
+            downloadBtn.href = images[index].src.replace('mid-res', 'high-res').replace('.avif', '.jpg');
 
             const nextIndex = (index + 1) % images.length;
             const prevIndex = (index - 1 + images.length) % images.length;
