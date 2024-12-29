@@ -47,6 +47,7 @@ section.contact {
     background-position: center center;
     text-align: center;
     overflow: hidden;
+    position: relative;
 }
 
 @media (min-aspect-ratio: 1/1) {
