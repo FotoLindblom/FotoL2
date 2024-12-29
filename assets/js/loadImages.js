@@ -40,6 +40,13 @@ export const initializeGallery = (images, path) => {
         });
     };
 
+    const createImageWrapper = (img) => {
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("image-wrapper");
+        wrapper.appendChild(img);
+        return wrapper;
+    };
+
     const setupImageObserver = (observer, images) => {
         images.forEach(image => {
             const imgElement = createLowResImage(image);
