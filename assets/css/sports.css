@@ -40,11 +40,12 @@ section#image-container img.landscape {
 
 div#filter-container {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    background-color: rgb(29, 29, 29);
 }
 
 span.filter {
-    margin: 10px 0 0 10px;
+    margin: 10px 0 10px 10px;
     font-size: 14px;
     padding: 8px;
     border-radius: 10px;
