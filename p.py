@@ -17,4 +17,5 @@ for file in all_files_list:
     else:
         all_files_dict[file.split('-')[0]] = [file]
 
-print(all_files_dict)
+for x in all_files_dict:
+    print(f"'{x}' : {all_files_dict[x]}, ")
