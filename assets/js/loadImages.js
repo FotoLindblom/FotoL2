@@ -87,7 +87,7 @@ export const initializeGallery = (images, path) => {
             }
         });
     };
-
+    
     const initializeCarousel = () => {
         const modal = document.getElementById("imageModal");
         const modalImg = document.getElementById("carouselImage");
